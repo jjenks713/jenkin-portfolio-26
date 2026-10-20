@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Josh Jenkin</title>
+  <meta name="description" content="Josh Jenkin is a software engineer at Onboard in Bremerton, Washington, building full-stack web apps and the sites small businesses run on.">
+  <meta name="theme-color" content="#08191a">
+  <meta property="og:title" content="Josh Jenkin, Software Engineer">
+  <meta property="og:description" content="Full-stack web apps and the sites small businesses run on.">
+  <meta property="og:image" content="https://josh-jenkin.com/assets/portrait.jpg">
+  <meta property="og:url" content="https://josh-jenkin.com/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://josh-jenkin.com/">
+  <link rel="icon" href="assets/portrait.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=JetBrains+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#work">Skip to work</a>
+  <canvas id="sound" aria-hidden="true"></canvas>
+
+  <div class="shell">
+    <header class="intro">
+      <img class="portrait" src="assets/portrait.jpg" alt="Josh Jenkin" width="148" height="148">
+      <div>
+        <h1 class="name">Josh<br>Jenkin</h1>
+        <p class="role"><span class="sr-only">Software Engineer at Onboard</span><span aria-hidden="true"><span class="typed">Software Engineer</span><span class="caret"></span><span class="at"> at <span class="co">Onboard</span></span></span></p>
+      </div>
+      <p class="blurb">I build full-stack web apps and keep small businesses online. Off the clock I'm in the studio making music, or learning to build games.</p>
+
+      <nav class="nav" aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#quests">Side quests</a>
+        <a href="#more">More</a>
+      </nav>
+
+      <div class="intro-foot">
+        <div class="location"><b>Bremerton, Washington</b></div>
+        <ul class="links">
+          <li><a href="https://github.com/jjenks713" target="_blank" rel="noopener">GitHub</a></li>
+          <!-- TODO: add LinkedIn, email and résumé once confirmed -->
+        </ul>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="section about" id="about">
+        <h2 class="label">About</h2>
+        <div>
+          <p>I'm a full-stack software engineer at <strong>Onboard</strong>, based in Bremerton, across the water from Seattle. I've been building for the web since 2018. At Onboard I helped replatform the stack from PHP and Laravel to ASP.NET and React with TypeScript, and modernized the resident portal with passwordless one-click sign-in. I also designed and built an internal email campaign tool, owning it from the MySQL schema to the AWS deploy. Working with design, product and backend teams, I've shipped hundreds of features and releases.</p>
+          <p>On the side, I keep a handful of small businesses online: a restaurant, an illustration press and a salon. I like handing someone a site they can run themselves, then sticking around as it grows.</p>
+          <p>Off the clock I'm a <strong>music producer and engineer</strong>, and a lifelong <strong>gamer</strong> who's now learning game design in Unity, using the same C# and .NET I write at work.</p>
+        </div>
+      </section>
+
+      <section class="section" id="work">
+        <h2 class="label">Independent work</h2>
+        <div class="cases">
+
+          <article class="case">
+            <div class="years">2022 — 2026</div>
+            <div class="case-body">
+              <h3><a href="https://creepybutcutepress.com" target="_blank" rel="noopener">Creepy But Cute Press</a></h3>
+              <p>An illustration press's gallery and shop, rebuilt this year as a full-stack app with its own API and an admin panel that edits the CMS for the owner.</p>
+              <ul class="tags"><li>React</li><li>TypeScript</li><li>TanStack Query</li><li>Express</li><li>MongoDB</li><li>Contentful</li><li>LaunchDarkly</li><li>Cloud Run</li></ul>
+              <div class="case-links"><a href="https://creepybutcutepress.com" target="_blank" rel="noopener">creepybutcutepress.com</a><a href="https://github.com/jjenks713/cbcp-2025" target="_blank" rel="noopener">Code</a></div>
+              <details name="case-study">
+                <summary>Case study</summary>
+                <dl class="study">
+                  <div><dt>Problem</dt><dd>The 2022 Next.js site showed the artwork, but it had no shop and no way to manage content outside the Contentful dashboard.</dd></div>
+                  <div><dt>Built</dt><dd>A React and TypeScript frontend with all data loading in TanStack Query. An Express API on Cloud Run handles JWT login, role-based permissions and inventory in MongoDB, and writes to Contentful through its management API. Content-model changes ship as migration scripts.</dd></div>
+                  <div><dt>Result</dt><dd>The owner manages artwork, shop items, prices and stock from an admin panel in the app. The shop and cart are still in progress, so they ship hidden behind a LaunchDarkly flag. I can test them in production, and launching will be a toggle, not a deploy.</dd></div>
+                </dl>
+              </details>
+            </div>
+          </article>
+
+          <article class="case">
+            <div class="years">2021 — 2026</div>
+            <div class="case-body">
+              <h3><a href="https://charleescomfortkitchen.com" target="_blank" rel="noopener">Charlee's Comfort Kitchen</a></h3>
+              <p>A restaurant's site that the owners update themselves. Live and maintained since 2021, through several rewrites.</p>
+              <ul class="tags"><li>Next.js</li><li>Contentful</li><li>Tailwind</li><li>Docker</li><li>Vercel</li></ul>
+              <div class="case-links"><a href="https://charleescomfortkitchen.com" target="_blank" rel="noopener">charleescomfortkitchen.com</a><a href="https://github.com/jjenks713/cc-kitchen-next" target="_blank" rel="noopener">Code</a></div>
+              <details name="case-study">
+                <summary>Case study</summary>
+                <dl class="study">
+                  <div><dt>Problem</dt><dd>Menus, hours and specials change constantly, and a small kitchen staff can't wait on a developer for each one.</dd></div>
+                  <div><dt>Built</dt><dd>A Next.js site with menus, specials, the calendar, the gallery and announcements modeled in Contentful, plus a scripted content setup so the CMS can be rebuilt from the repo.</dd></div>
+                  <div><dt>Result</dt><dd>The owners edit menus and specials in Contentful. My work since has been upkeep: menu and hours changes, image fixes and container builds.</dd></div>
+                </dl>
+              </details>
+            </div>
+          </article>
+
+          <article class="case">
+            <div class="years">2026</div>
+            <div class="case-body">
+              <h3><a href="https://github.com/jjenks713/linkedin-noise-reducer" target="_blank" rel="noopener">LinkedIn Noise Reducer</a> &amp; <a href="https://github.com/jjenks713/ai-overview-blocker" target="_blank" rel="noopener">AI Overview Blocker</a></h3>
+              <p>Two Chrome extensions that clean up pages people use every day: one hides promoted posts, anniversaries and job-change alerts, the other removes Google's AI Overview.</p>
+              <ul class="tags"><li>Manifest V3</li><li>Content scripts</li><li>MutationObserver</li><li>chrome.storage</li></ul>
+              <div class="case-links"><a href="https://github.com/jjenks713/linkedin-noise-reducer" target="_blank" rel="noopener">Noise Reducer code</a><a href="https://github.com/jjenks713/ai-overview-blocker" target="_blank" rel="noopener">AI Overview Blocker code</a></div>
+              <details name="case-study">
+                <summary>Case study</summary>
+                <dl class="study">
+                  <div><dt>Problem</dt><dd>Both sites render dynamically and change their markup often, so selector-based blockers break within weeks.</dd></div>
+                  <div><dt>Built</dt><dd>Content scripts that watch the page with a MutationObserver and match on visible text labels and content patterns instead of class names. A popup toggle saves each setting to chrome.storage.</dd></div>
+                  <div><dt>Result</dt><dd>Small, fast extensions with a maintenance guide that explains how to check for and fix markup changes.</dd></div>
+                </dl>
+              </details>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="section" id="quests">
+        <h2 class="label">Side quests</h2>
+        <div class="quests">
+          <article class="quest">
+            <div class="quest-head">
+              <span class="kicker">Music</span>
+              <span class="meter" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+            </div>
+            <h3>Producer &amp; engineer</h3>
+            <p>Writing, recording, mixing and mastering in my own studio.</p>
+          </article>
+          <article class="quest">
+            <div class="quest-head">
+              <span class="kicker">Game dev</span>
+              <span class="level">LV 1</span>
+            </div>
+            <h3>Learning to make games</h3>
+            <p>A lifelong gamer, now learning game design and building in Unity with C# and .NET.</p>
+            <ul class="tags"><li>Unity</li><li>C#</li><li>.NET</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="more">
+        <h2 class="label">More work</h2>
+        <ul class="more">
+          <li><span class="yr">2022</span><a href="https://samplified-next.vercel.app" target="_blank" rel="noopener">Samplified</a><span>Sample sharing for musicians · NextAuth, MongoDB, S3</span></li>
+          <li><span class="yr">2023</span><a href="https://smoke-mirrors-2023.vercel.app" target="_blank" rel="noopener">Smoke &amp; Mirrors</a><span>Salon site · Next.js, MUI</span></li>
+          <li><span class="yr">2023</span><a href="https://charlees-at-home.vercel.app" target="_blank" rel="noopener">Charlee's at Home</a><span>Sister site · Next.js, Contentful</span></li>
+          <li><span class="yr">2022</span><a href="https://octobitmusic.com" target="_blank" rel="noopener">Octobit Music</a><span>Music site</span></li>
+        </ul>
+      </section>
+
+      <footer class="footer">
+        <p>Designed and built by Josh Jenkin in Bremerton, Washington. Set in Archivo, Schibsted Grotesk and JetBrains Mono.</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
